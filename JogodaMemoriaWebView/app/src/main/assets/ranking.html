@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Ranking</title>
+        <link href="materialize.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div class="container" id="container">
+            <div class="input-field col s4">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" >
+                
+                <button type="button" class="waves-effect waves-light btn" id="salvar" onclick="criaTabela()">Salvar</button>
+            </div>
+            
+            <table>
+                <thead>
+                  <tr>
+                      <th>Nome</th>
+                      <th>Jogada</th>
+                      <th>Tempo</th>
+                  </tr>
+                </thead>
+        
+                <tbody id="tbody">
+                  
+                </tbody>
+              </table>
+        </div>
+           
+        <script src="materialize.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+</html>

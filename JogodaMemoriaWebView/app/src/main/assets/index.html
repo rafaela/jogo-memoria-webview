@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>HTML5 WebView</title>
+        <link href="materialize.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div class="container" id="container">
+            <div class="row">
+                <div class="col s3">
+                    <p>Jogadas: <span id="jogadas"></span> </p>
+                </div>
+
+                <div class="col s4 offset-s4">
+
+                </div>
+            </div>
+            <div class="row">
+                
+                <button class="col s12 reiniciar" id="btnReiniciar" onclick="reiniciarJogo()">
+                    Reiniciar
+                </button>
+            </div>
+        <div class="row linha1">
+            <button class="col s4 botoes b1" id="um" onclick="jogo()">
+                1
+            </button>
+
+            <button class="col s4 offset-s4 botoes b2" id="dois" onclick="jogo()">
+                2
+            </button>
+        </div>
+        <div class="row linha2">
+            <button class="col s4 botoes b3" id="tres" onclick="jogo()">
+                3
+            </button>
+
+            <button class="col s4 offset-s4 botoes b4" id="quatro" onclick="jogo()">
+                4
+            </button>
+        </div>
+        <div class="row linha3">
+            <button class="col s4 botoes b5" id="cinco" onclick="jogo()">
+                5
+            </button>
+
+        <button class="col s4 offset-s4 botoes b6" id="seis" onclick="jogo()">
+            6
+        </button>
+
+        
+        
+            <div class="input-field col s4">
+                <input id="nome" type="text" placeholder="Nome">
+                
+                <button type="button" class="waves-effect waves-light btn" id="salvar" onclick="criaTabela()">Salvar</button>
+            </div>
+            
+            <table>
+                <thead>
+                  <tr>
+                      <th>Nome</th>
+                      <th>Jogada</th>
+                      <th>Tempo</th>
+                  </tr>
+                </thead>
+        
+                <tbody id="tbody">
+                  
+                </tbody>
+              </table>
+        </div>
+
+        <script src="materialize.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+</html>
